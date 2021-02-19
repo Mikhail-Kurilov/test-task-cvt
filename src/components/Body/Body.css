@@ -1,0 +1,35 @@
+.body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.bodyWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigationBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5.1rem;
+}
+
+.toggleWords {
+    font-family: Rubik;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+    margin: 0 1.2rem;
+    cursor: pointer;
+}
+
+.toggleWords.active {
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E ;
+}
+

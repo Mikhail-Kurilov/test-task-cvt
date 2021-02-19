@@ -1,0 +1,117 @@
+.Films {
+    display: flex;
+    max-width: 118rem;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.filmsWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.newFilms {
+    display: flex;
+    flex-direction: column;
+}
+
+.newFilmsTitle {
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+}
+
+.filmsContainer {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movieItem {
+    display: flex;
+    flex-direction: column;
+    max-width: 28rem;
+}
+
+.moviePicture {
+    border-radius: 0.8rem;
+    max-height: 37rem;
+    cursor: pointer;
+}
+
+.filmsName {
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 1.6rem;
+}
+
+.genre {
+    margin-top: 3.2rem;
+}
+
+.genreContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.6rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.movieBox {
+    width: 28rem;
+    height: 20.8rem;
+    opacity: 0.8;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movieBox:hover {
+    opacity: 1;
+}
+
+.comedy {
+    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+}
+
+.dramas {
+    background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+}
+
+.scienceFiction {
+    background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+}
+
+.horrors {
+    background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+}
+
+.emoji {
+    font-family: Rubik;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57px;
+    margin-top: 6rem;
+    margin-bottom: 3.2rem;
+}
+
+.emoTitle {
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}

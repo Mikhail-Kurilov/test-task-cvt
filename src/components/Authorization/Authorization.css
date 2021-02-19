@@ -1,0 +1,42 @@
+.button {
+    font-family: Rubik;
+    font-weight: 500;
+    background: #E5261E;
+    width: 11.3rem;
+    height: 3.8rem;
+    color: white;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.authorization {
+    width: 30.4rem;
+    height: 39.4rem;
+    border-radius: 0.8rem;
+}
+
+.enterWord {
+    font-family: Rubik;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.authorizationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 23.2rem;
+}
+
+#login {
+    display: block;
+    border: none;
+    border-bottom: 0.1rem solid #333333;
+}
+
+#password {
+    display: block;
+    border: none;
+    border-bottom: 0.1rem solid #333333;
+}

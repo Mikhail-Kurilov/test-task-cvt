@@ -1,0 +1,74 @@
+import React from 'react';
+
+import './Header.css';
+
+class Header extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.authorizationToggle = props.authorizationToggle;
+        this.state = { authorizationState: props.authorizationState }
+    }
+
+    switchOn() {
+        this.authorizationToggle(true);
+    }
+
+    switchOff() {
+        this.setState( {authorizationState: false} )
+    }
+
+    userNameAdd() {
+        return localStorage.getItem('userName') ? localStorage.getItem('userName') : '';
+    }
+
+    userNameSaveStorage(event) {
+        const userName = event.target.innerHTML;
+        let name = userName.replaceAll('&nbsp;', '');
+        name = name.trim();
+         if (name !== '') {
+             localStorage.setItem('userName', name);
+         } 
+    }
+
+    authorization() {
+        if (this.state.authorizationState) {
+            return (
+                <div>
+                    <p className="userName">{this.userNameAdd()}</p>
+                    <button className="button" onClick = { (event) => this.switchOff(event) }>Выйти</button>
+                </div>
+            )
+        } else 
+        return (
+            <div>
+                <button className="button" onClick = { (event) => this.switchOn(event) }>Войти</button>
+            </div>
+        )
+    }
+
+    render() {
+        return (
+            <header className="header">
+                <div className="wrapper">
+                    <div className="logoBox">
+                        <img src="/sign.png" alt="sign" className="logo"></img>
+                        <span className="logoTitle"><h1 className="h1">Видеосервис</h1></span>
+                    </div>
+                    <div className="searchBox">
+                        <span>
+                            <input className="searchWord" type="searching" value="Поиск..." />
+                        </span>
+                        <button className="findButton">Найти</button>
+                    </div>
+                    <div className="enterBox">
+                        {this.authorization()}
+                    </div>
+                </div>
+            </header>
+        )
+    }
+}
+
+export default Header;

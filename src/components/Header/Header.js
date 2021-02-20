@@ -62,7 +62,7 @@ class Header extends React.Component {
                         </span>
                         <button className="findButton">Найти</button>
                     </div>
-                    <div className="enterBox">
+                    <div className="EnterBox">
                         {this.authorization()}
                     </div>
                 </div>

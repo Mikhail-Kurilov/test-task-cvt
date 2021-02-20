@@ -3,14 +3,12 @@ import React from 'react';
 import './Films.css';
 
 class Films extends React.Component {
-
-  
-
     render() {
-        const classesComedy = 'movieBox comedy';
-        const classesDramas = 'movieBox dramas';
-        const classesScience = 'movieBox scienceFiction';
-        const classesHorrors = 'movieBox horrors';
+        const CLASS_BOX = 'movieBox';
+        const classesComedy = `${CLASS_BOX} comedy`;
+        const classesDramas = `${CLASS_BOX} dramas`;
+        const classesScience = `${CLASS_BOX} scienceFiction`;
+        const classesHorrors = `${CLASS_BOX} horrors`;
         return (
             <div className="Films">
                 <div className="filmsWrapper">

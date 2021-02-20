@@ -20,12 +20,12 @@ class App extends React.Component {
   }
 
   authorizationToggle(value) {
-    this.setState( {login: value} );
+    this.setState({ login: value });
   }
 
   authorizationResult(value) {
-    this.setState( {login: !value} );
-    this.header.setState( {authorizationState: value} )
+    this.setState({ login: !value });
+    this.header.setState({ authorizationState: value })
   }
 
   render() {
@@ -37,16 +37,16 @@ class App extends React.Component {
           <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"></link>
         </Helmet>
-        {this.state.login ? 
-          <Authorization 
-          authorizationResult = { (val) => this.authorizationResult(val) }
-          authorizationToggle = { (val) => this.authorizationToggle(val) }
+        {this.state.login ?
+          <Authorization
+            authorizationResult={(val) => this.authorizationResult(val)}
+            authorizationToggle={(val) => this.authorizationToggle(val)}
           /> : ''
-          }
-        <Header 
-        ref = {header => this.header = header}
-        authorizationToggle = { (val) => this.authorizationToggle(val) }
-        authorizationState = {this.state.login}
+        }
+        <Header
+          ref={header => this.header = header}
+          authorizationToggle={(val) => this.authorizationToggle(val)}
+          authorizationState={this.state.login}
         />
         <Body />
         <Footer />

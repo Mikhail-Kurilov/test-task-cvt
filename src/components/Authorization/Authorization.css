@@ -1,4 +1,16 @@
-.button {
+.buttonAuth {
+    font-family: Rubik;
+    font-weight: 500;
+    background: #E5261E;
+    width: 11.3rem;
+    height: 3.8rem;
+    color: white;
+    border-radius: 0.4rem;
+    border: none;
+    margin-top: 11.1rem;
+}
+
+.button{
     font-family: Rubik;
     font-weight: 500;
     background: #E5261E;
@@ -13,30 +25,70 @@
     width: 30.4rem;
     height: 39.4rem;
     border-radius: 0.8rem;
+    position: absolute;
+    margin-top: 20.3rem;
+    margin-left: 60.8rem;
+    background: white;
+    text-align: center;
 }
 
 .enterWord {
+    margin-top: 3.6rem;
     font-family: Rubik;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 33px;
+    margin-bottom: 2.4rem;
 }
 
 .authorizationContainer {
     display: flex;
     flex-direction: column;
     width: 23.2rem;
+    margin-left: 3.6rem;
 }
 
 #login {
-    display: block;
+    border: none;
+    border-bottom: 0.1rem solid #333333;
+    width: 100%;
+}
+
+#password {
+    margin-top: 2.4rem;
     border: none;
     border-bottom: 0.1rem solid #333333;
 }
 
-#password {
-    display: block;
-    border: none;
-    border-bottom: 0.1rem solid #333333;
+.checkBox {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: row;
 }
+
+#checkMark {
+    margin-left: 3.6rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.4rem;
+}
+
+.rememberWord {
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    margin-left: 0.8rem;
+}
+
+.authorizationOff {
+    background: #333333;
+    opacity: 0.6;
+    width: 1440rem;
+    height: 80rem;
+    position: absolute;
+}
+

@@ -75,6 +75,7 @@
     cursor: pointer;
 }
 
+
 @media screen and (min-width: 720px) {
     .searchWord {
         width: 32rem;

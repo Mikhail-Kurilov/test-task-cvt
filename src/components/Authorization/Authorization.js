@@ -24,6 +24,8 @@ class Authorization extends React.Component {
     render() {
         return (
             <div>
+                <div className="authorizationOff" onClick={() => this.authorizationToggle(false)}>
+                </div>
                 <form className="authorization">
                     <p className="enterWord">Вход</p>
                     <span className="authorizationContainer">
@@ -36,8 +38,7 @@ class Authorization extends React.Component {
                     </span>
                     <button className="buttonAuth" onClick={() => this.login()}>Войти</button>
                 </form>
-                <div className="authorizationOff" onClick={() => this.authorizationToggle(false)}>
-                </div>
+                
             </div>
         )
     }

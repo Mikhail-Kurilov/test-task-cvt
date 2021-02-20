@@ -1,3 +1,4 @@
+
 .Films {
     display: flex;
     max-width: 118rem;
@@ -16,6 +17,7 @@
 .newFilms {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .newFilmsTitle {
@@ -37,18 +39,16 @@
 .movieItem {
     display: flex;
     flex-direction: column;
-    max-width: 28rem;
+    margin-right: 2rem;
 }
 
 .moviePicture {
     border-radius: 0.8rem;
-    max-height: 37rem;
     cursor: pointer;
 }
 
 .filmsName {
     font-family: Rubik;
-    font-size: 20px;
     font-style: normal;
     line-height: 24px;
     text-align: left;
@@ -68,8 +68,6 @@
 }
 
 .movieBox {
-    width: 28rem;
-    height: 20.8rem;
     opacity: 0.8;
     border-radius: 0.6rem;
     display: flex;
@@ -99,19 +97,136 @@
 
 .emoji {
     font-family: Rubik;
-    font-size: 48px;
     font-style: normal;
     font-weight: 400;
     line-height: 57px;
-    margin-top: 6rem;
-    margin-bottom: 3.2rem;
+    
 }
 
 .emoTitle {
     font-family: Rubik;
-    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     color: white;
+}
+
+@media screen and (min-width:928px) {
+    .movieItem {
+        max-width: 28rem;
+    }
+
+    .moviePicture {
+        height: 37rem;
+    }
+
+    .filmsName {
+        font-size: 20px;
+    }
+
+    .movieBox {
+        width: 28rem;
+        height: 20.8rem;
+    }
+
+    .emoji {
+        font-size: 48px;
+        margin-top: 6rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .emoTitle {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 730px) and (max-width: 927px) {
+    .movieItem {
+        max-width: 18rem;
+    }
+
+    .moviePicture {
+        height: 24rem;
+    }
+
+    .filmsName {
+        font-size: 18px;
+    }
+
+    .movieBox {
+        width: 24rem;
+        height: 16rem;
+    }
+
+    .emoji {
+        font-size: 34px;
+        margin-top: 4rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .emoTitle {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 729px) {
+    .movieItem {
+        max-width: 12rem;
+    }
+
+    .moviePicture {
+        height: 18rem;
+    }
+
+    .filmsName {
+        font-size: 14px;
+        overflow-wrap: break-word;
+    }
+
+    .movieBox {
+        width: 20rem;
+        height: 14rem;
+    }
+
+    .emoji {
+        font-size: 30px;
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .emoTitle {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 519px) {
+    .movieItem {
+        max-width: 10rem;
+    }
+
+    .moviePicture {
+        height: 12rem;
+    }
+
+    .filmsName {
+        font-size: 12px;
+        overflow-wrap: break-word;
+    }
+
+    .movieBox {
+        width: 18rem;
+        height: 12rem;
+    }
+
+    .emoji {
+        font-size: 26px;
+        margin-top: 2.8rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .emoTitle {
+        font-size: 14px;
+    }
+    
 }

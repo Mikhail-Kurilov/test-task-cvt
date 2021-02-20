@@ -38,10 +38,6 @@
     line-height: 24px;
 }
 
-.imgBox {
-    width: 40rem
-}
-
 .logo1 {
     height: 6.4rem;
 }
@@ -62,7 +58,6 @@
     display: flex;
     flex-direction: row;
     font-family: Rubik;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
@@ -79,10 +74,67 @@
     display: flex;
     flex-direction: row;
     font-family: Rubik;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
     text-align: left;
     margin-top: 1.2rem;
+}
+
+@media screen and (min-width:928px) {
+    .imgBox {
+        width: 40rem
+    }
+
+    .progListFirst {
+        font-size: 16px;
+    }
+
+    .progList {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 730px) and (max-width: 927px) {
+    .imgBox {
+        width: 25rem
+    }
+
+    .progListFirst {
+        font-size: 14px;
+    }
+
+    .progList {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 729px) {
+    .imgBox {
+        width: 16rem
+    }
+
+    .progListFirst {
+        font-size: 12px;
+    }
+
+    .progList {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 519px) {
+    .imgBox {
+        width: 12rem
+    }
+
+    .progListFirst {
+        font-size: 10px;
+        overflow-wrap: break-word;
+    }
+
+    .progList {
+        font-size: 10px;
+        overflow-wrap: break-word;
+    }
 }

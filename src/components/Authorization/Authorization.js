@@ -33,7 +33,7 @@ class Authorization extends React.Component {
                         <input id="password"></input>
                     </span>
                     <span className="checkBox">
-                        <input id="checkMark"></input>
+                        <input id="checkMark" type="checkbox"></input>
                         <p className="rememberWord">Запомнить</p>
                     </span>
                     <button className="buttonAuth" onClick={() => this.login()}>Войти</button>

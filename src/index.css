@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Roboto-Black';
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Black'), url(./components/Fonts/Rubik-Black.ttf) format('ttf');
+  src: local('Roboto-Regular'), url(./components/Fonts/Rubik-Regular.ttf) format('ttf');
+}

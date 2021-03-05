@@ -33,9 +33,6 @@ class App extends React.Component {
       <div className="App">
         <Helmet>
           <title>Видеосервис</title>
-          <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-          <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet"></link>
-          <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"></link>
         </Helmet>
         {this.state.login ?
           <Authorization

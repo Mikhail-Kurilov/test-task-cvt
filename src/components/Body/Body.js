@@ -22,17 +22,17 @@ class Body extends React.Component {
         return (
             <div className="body">
                 <div className="bodyWrapper">
-                     <div className="navigationBox">       
-                             <span className="toggleWords active" onClick={() => this.toggleWordsClickHandler('Films')}>
-                                Фильмы
-                             </span>
-                             <span className="toggleWords" onClick={() => this.toggleWordsClickHandler('Channels')}>
-                                Телеканалы
-                             </span>
-                     </div>
-                     <div className="bodyMain">
-                        {this.state.activePage === 'Films' ? <Films /> : <Channels />}
-                     </div>
+                    <div className="navigationBox">       
+                        <button className="toggleWords active" onClick={() => this.toggleWordsClickHandler('Films')}>
+                        Фильмы
+                        </button>
+                        <button className="toggleWords" onClick={() => this.toggleWordsClickHandler('Channels')}>
+                        Телеканалы
+                        </button>
+                    </div>
+                    <div className="bodyMain">
+                    {this.state.activePage === 'Films' ? <Films /> : <Channels />}
+                    </div>
                 </div>
             </div>
         )

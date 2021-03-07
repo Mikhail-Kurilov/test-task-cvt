@@ -26,6 +26,8 @@
     line-height: 33px;
     margin: 0 1.2rem;
     cursor: pointer;
+    border: none;
+    background-color: unset;
 }
 
 .toggleWords.active {

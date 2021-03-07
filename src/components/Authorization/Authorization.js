@@ -29,8 +29,8 @@ class Authorization extends React.Component {
                 <form className="authorization">
                     <p className="enterWord">Вход</p>
                     <span className="authorizationContainer">
-                        <input id="login"></input> 
-                        <input id="password"></input>
+                        <input id="login" type="email"></input> 
+                        <input id="password" type="password"></input>
                     </span>
                     <span className="checkBox">
                         <input id="checkMark" type="checkbox"></input>

@@ -58,7 +58,7 @@ class Header extends React.Component {
                     </div>
                     <div className="searchBox">
                         <span>
-                            <input className="searchWord" type="searching" value="Поиск..." />
+                            <input className="searchWord" type="search" value="Поиск..." />
                         </span>
                         <button className="findButton">Найти</button>
                     </div>

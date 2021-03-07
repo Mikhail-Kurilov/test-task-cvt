@@ -12,44 +12,44 @@ import Body from './components/Body/Body';
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      login: false
-    };
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+        login: false
+        };
+    }
 
-  authorizationToggle(value) {
-    this.setState({ login: value });
-  }
+    authorizationToggle(value) {
+        this.setState({ login: value });    
+    }
 
-  authorizationResult(value) {
-    this.setState({ login: !value });
-    this.header.setState({ authorizationState: value })
-  }
+    authorizationResult(value) {
+        this.setState({ login: !value });
+        this.header.setState({ authorizationState: value })
+    }
 
-  render() {
-    return (
-      <div className="App">
-        <Helmet>
-          <title>Видеосервис</title>
-        </Helmet>
-        {this.state.login ?
-          <Authorization
-            authorizationResult={(val) => this.authorizationResult(val)}
+    render() {
+        return (
+        <div className="App">
+            <Helmet>
+            <title lang="ru">Видеосервис</title>
+            </Helmet>
+            {this.state.login ?
+            <Authorization
+                authorizationResult={(val) => this.authorizationResult(val)}
+                authorizationToggle={(val) => this.authorizationToggle(val)}
+            /> : ''
+            }
+            <Header
+            ref={header => this.header = header}
             authorizationToggle={(val) => this.authorizationToggle(val)}
-          /> : ''
-        }
-        <Header
-          ref={header => this.header = header}
-          authorizationToggle={(val) => this.authorizationToggle(val)}
-          authorizationState={this.state.login}
-        />
-        <Body />
-        <Footer />
-      </div>
-    );
-  }
+            authorizationState={this.state.login}
+            />
+            <Body />
+            <Footer />
+        </div>
+        );
+    }
 }
 
 export default App;

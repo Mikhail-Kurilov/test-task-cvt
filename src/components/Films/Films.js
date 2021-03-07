@@ -13,7 +13,7 @@ class Films extends React.Component {
             <div className="Films">
                 <div className="filmsWrapper">
                     <div className="newFilms">
-                        <p className="newFilmsTitle">🔥 Новинки</p>
+                        <a className="newFilmsTitle" href="">🔥 Новинки</a>
                         <div className="filmsContainer">
                             <div className="movieItem">
                                 <img src="/cat.png" alt="cat" className="moviePicture"></img> 
@@ -34,7 +34,7 @@ class Films extends React.Component {
                         </div>
                     </div>
                     <div className="genre">
-                        <p className="newFilmsTitle">Жанры</p>
+                        <a className="newFilmsTitle" href="">Жанры</a>
                         <div className="genreContainer">
                             <div className={classesComedy}>
                                 <p className="emoji">😁</p>

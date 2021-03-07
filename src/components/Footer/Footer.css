@@ -35,6 +35,11 @@
     padding: 0.3rem 0;
 }
 
+.tel {
+    text-decoration: none;
+    color: #333333;
+}
+
 .hrefMainSite {
     font-family: Rubik;
     font-size: 16px;
@@ -43,4 +48,6 @@
     line-height: 19px;
     text-align: left;
     padding-top: 0.7rem;
+    text-decoration: none;
+    color: #1F4766;
 }

@@ -21,7 +21,6 @@
 }
 
 .newFilmsTitle {
-    font-family: Rubik;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -48,9 +47,10 @@
 }
 
 .filmsName {
-    font-family: Rubik;
     font-style: normal;
+    font-weight: 400;
     line-height: 24px;
+    font-size: 2rem;
     text-align: left;
     margin-top: 1.6rem;
 }
@@ -100,15 +100,23 @@
     font-style: normal;
     font-weight: 400;
     line-height: 57px;
-    
 }
 
 .emoTitle {
-    font-family: Rubik;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 23.7px;
     color: white;
+}
+
+.hrefCards {
+    text-decoration: none;
+    color: #333333;
+}
+
+.hrefGenres {
+    text-decoration: none;
 }
 
 @media screen and (min-width:928px) {

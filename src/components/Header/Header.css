@@ -75,6 +75,10 @@
     cursor: pointer;
 }
 
+.findButton:hover {
+    color: #CC221B;
+}
+
 
 @media screen and (min-width: 720px) {
     .searchWord {

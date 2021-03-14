@@ -8,7 +8,9 @@ class Header extends React.Component {
         super(props);
 
         this.authorizationToggle = props.authorizationToggle;
-        this.state = { authorizationState: props.authorizationState }
+        this.state = { 
+            authorizationState: props.authorizationState
+        }
     }
 
     switchOn() {
@@ -56,12 +58,12 @@ class Header extends React.Component {
                         <img src="/sign.png" alt="sign" className="logo"></img>
                         <span className="logoTitle"><h1 className="h1">Видеосервис</h1></span>
                     </div>
-                    <div className="searchBox">
+                    <form className="searchBox">
                         <span>
-                            <input className="searchWord" type="search" value="Поиск..." />
+                            <input className="searchWord" type="search" value="Поиск..."></input>
                         </span>
                         <button className="findButton">Найти</button>
-                    </div>
+                    </form>
                     <div className="EnterBox">
                         {this.authorization()}
                     </div>

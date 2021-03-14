@@ -30,9 +30,9 @@ class Body extends React.Component {
                         Телеканалы
                         </button>
                     </div>
-                    <div className="bodyMain">
+                    <main className="bodyMain">
                     {this.state.activePage === 'Films' ? <Films /> : <Channels />}
-                    </div>
+                    </main>
                 </div>
             </div>
         )

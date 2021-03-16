@@ -68,31 +68,42 @@
 }
 
 .movieBox {
-    opacity: 0.8;
     border-radius: 0.6rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.movieBox:hover {
-    opacity: 1;
+.comedy {
+    background: linear-gradient(127.83deg, RGBA(242, 201, 76, 0.8) 8.44%, RGBA(242, 154, 74, 0.8) 91.36%);
 }
 
-.comedy {
-    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+.comedy:hover {
+    background: linear-gradient(127.83deg, RGBA(242, 201, 76, 1) 8.44%, RGBA(242, 154, 74, 1) 91.36%);
 }
 
 .dramas {
-    background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+    background: linear-gradient(127.83deg, RGBA(242, 153, 74, 0.8) 8.44%, RGBA(235, 87, 87, 0.8) 91.36%);
+}
+
+.dramas:hover {
+    background: linear-gradient(127.83deg, RGBA(242, 153, 74, 1) 8.44%, RGBA(235, 87, 87, 1) 91.36%);
 }
 
 .scienceFiction {
-    background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+    background: linear-gradient(127.83deg, RGBA(86, 204, 242, 0.8) 8.44%, RGBA(47, 128, 237, 0.8) 91.36%);
+}
+
+.scienceFiction:hover {
+    background: linear-gradient(127.83deg, RGBA(86, 204, 242, 1) 8.44%, RGBA(47, 128, 237, 1) 91.36%);
 }
 
 .horrors {
-    background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+    background: linear-gradient(127.83deg, RGBA(130, 130, 130, 0.8) 8.44%, RGBA(51, 51, 51, 0.8) 91.36%);
+}
+
+.horrors:hover {
+    background: linear-gradient(127.83deg, RGBA(130, 130, 130, 1) 8.44%, RGBA(51, 51, 51, 1) 91.36%);
 }
 
 .emoji {

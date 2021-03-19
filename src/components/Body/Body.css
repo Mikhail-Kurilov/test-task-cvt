@@ -19,7 +19,6 @@
 }
 
 .toggleWords {
-    font-family: Rubik;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
@@ -28,10 +27,16 @@
     cursor: pointer;
     border: none;
     background-color: unset;
+    display: table;
+    height: 4.4rem;
 }
 
 .toggleWords.active {
     color: #E5261E;
-    border-bottom: 2px solid #E5261E ;
+    border-bottom: 2px solid #E5261E;
+}
+
+.bodyMain {
+    display: flex;
 }
 

@@ -4,20 +4,20 @@
     max-width: 118rem;
     margin: 0 auto;
     flex: 1;
+    width: 100%;
 }
 
 .filmsWrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 4.1rem;
-    justify-content: space-between;
-    width: 100%;
+    margin-top: 3rem;
+    align-content: space-between;
 }
 
 .newFilms {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-content: space-between;
 }
 
 .newFilmsTitle {
@@ -33,12 +33,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    flex: 1;
+    margin-right: 6rem;
+    
 }
 
 .movieItem {
     display: flex;
     flex-direction: column;
-    margin-right: 2rem;
+    flex: 1;
+    align-content: space-between;
 }
 
 .moviePicture {
@@ -53,10 +58,11 @@
     font-size: 2rem;
     text-align: left;
     margin-top: 1.6rem;
+    letter-spacing: -0.05rem;
 }
 
 .genre {
-    margin-top: 3.2rem;
+    margin-top: 3rem;
 }
 
 .genreContainer {
@@ -151,7 +157,7 @@
     .emoji {
         font-size: 48px;
         margin-top: 6rem;
-        margin-bottom: 3.2rem;
+        margin-bottom: 2.8rem;
     }
 
     .emoTitle {

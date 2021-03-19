@@ -1,5 +1,4 @@
 .buttonAuth {
-    font-family: Rubik;
     font-weight: 500;
     background: #E5261E;
     width: 11.3rem;
@@ -9,6 +8,7 @@
     border: none;
     margin-top: 11.1rem;
     cursor: pointer;
+    letter-spacing: 0.1rem;
 }
 
 .buttonAuth:hover {
@@ -16,7 +16,6 @@
 }
 
 .button{
-    font-family: Rubik;
     font-weight: 500;
     background: #E5261E;
     width: 11.3rem;
@@ -25,6 +24,7 @@
     border-radius: 0.4rem;
     border: none;
     cursor: pointer;
+    letter-spacing: 0.1rem;
 }
 
 .button:hover {
@@ -43,12 +43,11 @@
 
 .enterWord {
     margin-top: 3.6rem;
-    font-family: Rubik;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 33px;
-    margin-bottom: 2.4rem;
+    margin-bottom: 3.2rem;
 }
 
 .authorizationContainer {
@@ -65,7 +64,7 @@
 }
 
 #password {
-    margin-top: 2.4rem;
+    margin-top: 3.2rem;
     border: none;
     border-bottom: 0.1rem solid #333333;
 }
@@ -90,7 +89,6 @@ input:checked + label:before {
 }
 
 .rememberWord {
-    font-family: Rubik;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -98,6 +96,7 @@ input:checked + label:before {
     text-align: left;
     margin-left: 0.8rem;
     cursor: pointer;
+    letter-spacing: -0.05rem;
 }
 
 .rememberWord:before {
@@ -107,15 +106,15 @@ input:checked + label:before {
     position: relative;
     text-align: center;
     text-indent: 0px;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.4rem;
     background: #FFF;
     border: 1px solid #333333;
     border-image: initial;
     vertical-align: middle;
-    border-radius: 0.3rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    border-radius: 0.4rem;
+    margin-right: 0.8rem;
+    margin-left: 2.8rem;
     cursor: pointer;
 }
 

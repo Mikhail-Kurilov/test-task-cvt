@@ -3,18 +3,6 @@ import React from 'react';
 import './Films.css';
 
 class Films extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            activeCard: ''
-        }
-    }
-    
-    toggleCardsHandler(activeCard) {
-        document.querySelectorAll('.moviePicture').forEach(elem => elem.classList.toggle('active'));
-        this.setState({ activeCard });
-    }
 
     render() {
         const CLASS_BOX = 'movieBox';
@@ -27,7 +15,7 @@ class Films extends React.Component {
             <div className="Films">
                 <div className="filmsWrapper">
                     <section className="newFilms">
-                        <h2 className="newFilmsTitle"><img src="/new.png" alt="Новинки"></img></h2>
+                        <h2 className="newFilmsTitle"><img className="fireIco" src="/fire-ico.png" alt="Новинки" />Новинки</h2>
                         <ul className="filmsContainer">
                             <li className="movieItem">
                                 <a className="hrefCat hrefCards" href="">
@@ -43,8 +31,7 @@ class Films extends React.Component {
                             </li>
                             <li className="movieItem">
                                 <a className="hrefHollywood hrefCards" href="" >
-                                    <img src="/holywood.png" alt="holywood" className="moviePicture active" id="woodPic" onMouseOver={() => this.toggleCardsHandler('Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.')}
-                                    onMouseOut={() => this.toggleCardsHandler('')}></img> 
+                                    <div className="moviePicture" id="woodPic" data-title='Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.'><img src="/holywood.png" alt="holywood" /></div>
                                     <h3 className="filmsName">Однажды... в Голливуде</h3> 
                                 </a>
                             </li>

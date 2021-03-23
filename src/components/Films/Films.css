@@ -28,6 +28,10 @@
     text-align: left;
 }
 
+.fireIco {
+    margin-right: 0.5rem;
+}
+
 .filmsContainer {
     margin-top: 1.6rem;
     display: flex;
@@ -49,12 +53,30 @@
 .moviePicture {
     border-radius: 0.8rem;
     cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.moviePicture::after {
+    content: attr(data-title);  
+}
+
+.moviePicture:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    line-height: 22.4px;
+    z-index: 2;
+    background: rgba(51, 51, 51, 51, 0.8); 
+    font-size: 16px;
+    left: 1.6rem; top:1.6rem; right: 1.6rem;
+    color: #f2f2f2;
+    text-align: left;
 }
 
 .filmsName {
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 22.4px;
     font-size: 2rem;
     text-align: left;
     margin-top: 1.6rem;
@@ -125,6 +147,7 @@
     font-size: 2rem;
     line-height: 23.7px;
     color: white;
+    overflow-wrap: bre;
 }
 
 .hrefCards {

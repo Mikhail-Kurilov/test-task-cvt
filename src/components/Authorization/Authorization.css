@@ -39,6 +39,7 @@
     margin-top: 20.3rem;
     background: white;
     text-align: center;
+    z-index: 10;
 }
 
 .enterWord {
@@ -118,12 +119,19 @@ input:checked + label:before {
     cursor: pointer;
 }
 
+.authorizationWrapper {
+    height: 100%;
+}
+
 .authorizationOff {
     background: #333333;
     opacity: 0.6;
-    width: 1440rem;
-    height: 80rem;
+    width: 100%;
+    height: 100%;
     position: absolute;
+    z-index: 9;
+    height: 114.4rem;
+    overflow: hidden;
 }
 
 

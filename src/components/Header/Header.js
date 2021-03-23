@@ -22,7 +22,7 @@ class Header extends React.Component {
     }
 
     userNameAdd() {
-        return localStorage.getItem('userName') ? localStorage.getItem('userName') : '';
+        return localStorage.getItem('userName') ? localStorage.getItem('userName') : 'Константин К.';
     }
 
     userNameSaveStorage(event) {
@@ -37,8 +37,8 @@ class Header extends React.Component {
     authorization() {
         if (this.state.authorizationState) {
             return (
-                <div>
-                    <p className="userName">{this.userNameAdd()}</p>
+                <div className="userButtonBox">
+                    <p className="userName" contentEditable="true">{this.userNameAdd()}</p>
                     <button className="button" onClick = { (event) => this.switchOff(event) }>Выйти</button>
                 </div>
             )
@@ -60,7 +60,7 @@ class Header extends React.Component {
                     </div>
                     <form className="searchBox">
                         <span>
-                            <input className="searchWord" type="search" value="Поиск..."></input>
+                            <input className="searchWord" type="search" placeholder="Поиск..."></input>
                         </span>
                         <button className="findButton">Найти</button>
                     </form>

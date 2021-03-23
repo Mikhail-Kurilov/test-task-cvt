@@ -23,7 +23,7 @@ class Authorization extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="authorizationWrapper">
                 <div className="authorizationOff" onClick={() => this.authorizationToggle(false)}>
                 </div>
                 <form className="authorization">

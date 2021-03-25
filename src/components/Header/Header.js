@@ -37,15 +37,15 @@ class Header extends React.Component {
     authorization() {
         if (this.state.authorizationState) {
             return (
-                <div className="userButtonBox">
-                    <p className="userName" contentEditable="true">{this.userNameAdd()}</p>
-                    <button className="button" onClick = { (event) => this.switchOff(event) }>Выйти</button>
+                <div className="header__wrapper_enterBox_userButtonBox">
+                    <p className="header__wrapper_enterBox_userButtonBox_userName" contentEditable="true">{this.userNameAdd()}</p>
+                    <button className="header__wrapper_enterBox_userButtonBox_button" onClick = { (event) => this.switchOff(event) }>Выйти</button>
                 </div>
             )
         } else 
         return (
             <div>
-                <button className="button" onClick = { (event) => this.switchOn(event) }>Войти</button>
+                <button className="header__wrapper_enterBox_userButtonBox_button" onClick = { (event) => this.switchOn(event) }>Войти</button>
             </div>
         )
     }
@@ -53,18 +53,18 @@ class Header extends React.Component {
     render() {
         return (
             <header className="header">
-                <div className="wrapper">
-                    <div className="logoBox">
-                        <img src="/sign.png" alt="sign" className="logo"></img>
-                        <span className="logoTitle"><h1 className="h1">Видеосервис</h1></span>
+                <div className="header__wrapper">
+                    <div className="header__wrapper_logoBox">
+                        <img src="/sign.png" alt="sign" className="header__wrapper_logoBox_logo"></img>
+                        <span className="header__wrapper_logoBox_logoTitle"><h1 className="header__wrapper_logoBox_logoTitle_h1">Видеосервис</h1></span>
                     </div>
-                    <form className="searchBox">
+                    <form className="header__wrapper_searchBox">
                         <span>
-                            <input className="searchWord" type="search" placeholder="Поиск..."></input>
+                            <input className="header__wrapper_searchBox_searchWord" type="search" placeholder="Поиск..."></input>
                         </span>
-                        <button className="findButton">Найти</button>
+                        <button className="header__wrapper_searchBox_findButton">Найти</button>
                     </form>
-                    <div className="EnterBox">
+                    <div className="header__wrapper_enterBox">
                         {this.authorization()}
                     </div>
                 </div>

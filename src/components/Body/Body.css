@@ -5,12 +5,12 @@
     max-width: 100%;
 }
 
-.bodyWrapper {
+.body__bodyWrapper {
     display: flex;
     flex-direction: column;
 }
 
-.navigationBox {
+.body__bodyWrapper_navigationBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,7 +18,7 @@
     margin-top: 4.1rem;
 }
 
-.toggleWords {
+.body__bodyWrapper_navigationBox_toggleWords {
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
@@ -31,12 +31,12 @@
     height: 4.4rem;
 }
 
-.toggleWords.active {
+.body__bodyWrapper_navigationBox_toggleWords.active {
     color: #E5261E;
     border-bottom: 2px solid #E5261E;
 }
 
-.bodyMain {
+.body__bodyWrapper_bodyMain {
     display: flex;
 }
 

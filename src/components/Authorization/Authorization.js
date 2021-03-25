@@ -24,21 +24,20 @@ class Authorization extends React.Component {
     render() {
         return (
             <div className="authorizationWrapper">
-                <div className="authorizationOff" onClick={() => this.authorizationToggle(false)}>
+                <div className="authorizationWrapper__authorizationOff" onClick={() => this.authorizationToggle(false)}>
                 </div>
-                <form className="authorization">
-                    <p className="enterWord">Вход</p>
-                    <span className="authorizationContainer">
+                <form className="authorizationWrapper_authorization">
+                    <p className="authorizationWrapper_authorization_enterWord">Вход</p>
+                    <span className="authorizationWrapper_authorization_authorizationContainer">
                         <input id="login" type="email"></input> 
                         <input id="password" type="password"></input>
                     </span>
-                    <span className="checkBox">
+                    <span className="authorizationWrapper_authorization_checkBox">
                         <input id="checkMark" type="checkbox"></input>
-                        <label className="rememberWord" for="checkMark">Запомнить</label>
+                        <label className="authorizationWrapper_authorization_checkBox_rememberWord" for="checkMark">Запомнить</label>
                     </span>
-                    <button className="buttonAuth" onClick={() => this.login()}>Войти</button>
+                    <button className="authorizationWrapper_authorization_buttonAuth" onClick={() => this.login()}>Войти</button>
                 </form>
-                
             </div>
         )
     }

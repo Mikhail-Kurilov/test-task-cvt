@@ -5,37 +5,37 @@
     max-width: 100%;
 }
 
-.wrapper {
+.header__wrapper {
     display: flex;
 }
 
-.logoBox {
+.header__wrapper_logoBox {
     display: flex;
     flex-direction: row;
 }
 
-.logo {
+.header__wrapper_logoBox_logo {
     margin-right: 1rem;
 }
 
-.logoTitle {
+.header__wrapper_logoBox_logoTitle {
     height: 2.4rem;
     margin: auto;
 }
 
-.h1 {
+.header__wrapper_logoBox_logoTitle_h1 {
     text-align: center;
     font-weight: 500;
     color: #333333;
     font-size: 2rem;
 }
 
-.searchBox {
+.header__wrapper_searchBox {
     display: flex;
     margin-left: -6.5rem;
 }
 
-.searchWord {
+.header__wrapper_searchBox_searchWord {
     color: #828282;
     font-size: 1.6em;
     font-style: normal;
@@ -48,7 +48,7 @@
     display: block;
 }
 
-.findButton {
+.header__wrapper_searchBox_findButton {
     margin-left: 3.2rem;
     font-weight: 500;
     font-size: 1.6rem;
@@ -59,28 +59,44 @@
     cursor: pointer;
 }
 
-.findButton:hover {
+.header__wrapper_searchBox_findButton:hover {
     color: #CC221B;
 }
 
-.userButtonBox {
+.header__wrapper_enterBox_userButtonBox {
     display: flex;
     flex-direction: row;
 }
 
-.userName {
+.header__wrapper_enterBox_userButtonBox_userName {
     width: 11.4rem;
     height: 1.9rem;
     font-size: 1.6rem;
     font-weight: 500;
 }
 
+.header__wrapper_enterBox_userButtonBox_button{
+    font-weight: 500;
+    background: #E5261E;
+    width: 11.3rem;
+    height: 3.8rem;
+    color: white;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.header__wrapper_enterBox_userButtonBox_button:hover {
+    background: #CC221B;
+}
+
 @media screen and (min-width: 720px) {
-    .searchWord {
+    .header__wrapper_searchBox_searchWord {
         width: 32rem;
     }
 
-    .wrapper {
+    .header__wrapper {
         justify-content: space-between;
         width: 118rem;
         height: 4rem;
@@ -92,11 +108,11 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 719px) {
-    .searchWord {
+    .header__wrapper_searchBox_searchWord {
         width: 24rem;
     }
 
-    .wrapper {
+    .header__wrapper {
         justify-content: space-between;
         width: 118rem;
         height: 4rem;
@@ -108,7 +124,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 639px) {
-    .wrapper {
+    .header__wrapper {
         flex-direction: column;
         height: 14rem;
     }
@@ -117,11 +133,11 @@
         padding-top: 0.2rem;
     }
 
-    .logoBox {
+    .header__wrapper_logoBox {
         margin-bottom: 1.5rem;
     }
 
-    .searchBox {
+    .header__wrapper_searchBox {
         margin-bottom: 1.5rem;
     }
 }

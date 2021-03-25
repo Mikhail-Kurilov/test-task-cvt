@@ -5,7 +5,7 @@
     height: 12rem;
 }
 
-.footerWrapper {
+.footer__footerWrapper {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -15,18 +15,18 @@
     align-items: center;
 }
 
-.cs-logo {
+.footer__footerWrapper_cs-logo {
     margin-right: 3.998rem;
     max-height: 6.4rem;
 }
 
-.footerTextBox {
+.footer__footerWrapper_footerTextBox {
     display: flex;
     flex-direction: column;
     margin-top: -0.5rem;
 }
 
-.footerText {
+.footer__footerWrapper_footerTextBox_footerText {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -36,12 +36,12 @@
     letter-spacing: -0.035rem;
 }
 
-.tel {
+.footer__footerWrapper_footerTextBox_footerText_tel {
     text-decoration: none;
     color: #333333;
 }
 
-.hrefMainSite {
+.footer__footerWrapper_footerTextBox_hrefMainSite {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

@@ -1,11 +1,11 @@
-.Channels {
+.channels {
     display: flex;
     width: 100%;
     flex: 1;
     margin: 0 auto;
 }
 
-.channelsContainer {
+.channels__channelsContainer {
     display: flex;
     flex-direction: column;
     margin-top: 2.7rem;
@@ -16,7 +16,7 @@
     justify-content: space-between;
 }
 
-.channelBox {
+.channels__channelsContainer_channelBox {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-.channelTextBox {
+.channels__channelsContainer_channelBox_channelTextBox {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -36,23 +36,23 @@
     line-height: 24px;
 }
 
-.logo1 {
+.channels__channelsContainer_channelBox_imgBox_logo1 {
     height: 6.4rem;
 }
 
-.logo2x2 {
+.channels__channelsContainer_channelBox_imgBox_logo2x2 {
     height: 4.9rem;
 }
 
-.rbcLogo {
+.channels__channelsContainer_channelBox_imgBox_rbcLogo {
     height: 5.4rem;
 }
 
-.amediaLogo {
+.channels__channelsContainer_channelBox_imgBox_amediaLogo {
     height: 6.4rem;
 }
 
-.progListFirst {
+.channels__channelsContainer_channelBox_channelTextBox_progListFirst {
     display: flex;
     flex-direction: row;
     font-style: normal;
@@ -64,11 +64,15 @@
     letter-spacing: -0.02rem;
 }
 
-.time {
+.channels__channelsContainer_channelBox_channelTextBox_progListFirst_time {
     margin-right: 1.7rem;
 }
 
-.progList {
+.channels__channelsContainer_channelBox_channelTextBox_progList_time {
+    margin-right: 1.7rem;
+}
+
+.channels__channelsContainer_channelBox_channelTextBox_progList {
     display: flex;
     flex-direction: row;
     font-style: normal;
@@ -80,58 +84,58 @@
 }
 
 @media screen and (min-width:928px) {
-    .imgBox {
+    .channels__channelsContainer_channelBox_imgBox {
         width: 40rem
     }
 
-    .progListFirst {
+    .channels__channelsContainer_channelBox_channelTextBox_progListFirst {
         font-size: 16px;
     }
 
-    .progList {
+    .channels__channelsContainer_channelBox_channelTextBox_progList {
         font-size: 16px;
     }
 }
 
 @media screen and (min-width: 730px) and (max-width: 927px) {
-    .imgBox {
+    .channels__channelsContainer_channelBox_imgBox {
         width: 25rem
     }
 
-    .progListFirst {
+    .channels__channelsContainer_channelBox_channelTextBox_progListFirst {
         font-size: 14px;
     }
 
-    .progList {
+    .channels__channelsContainer_channelBox_channelTextBox_progList {
         font-size: 14px;
     }
 }
 
 @media screen and (min-width: 520px) and (max-width: 729px) {
-    .imgBox {
+    .channels__channelsContainer_channelBox_imgBox {
         width: 16rem
     }
 
-    .progListFirst {
+    .channels__channelsContainer_channelBox_channelTextBox_progListFirst {
         font-size: 12px;
     }
 
-    .progList {
+    .channels__channelsContainer_channelBox_channelTextBox_progList {
         font-size: 12px;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 519px) {
-    .imgBox {
+    .channels__channelsContainer_channelBox_imgBox {
         width: 12rem
     }
 
-    .progListFirst {
+    .channels__channelsContainer_channelBox_channelTextBox_progListFirst {
         font-size: 10px;
         overflow-wrap: break-word;
     }
 
-    .progList {
+    .channels__channelsContainer_channelBox_channelTextBox_progList {
         font-size: 10px;
         overflow-wrap: break-word;
     }

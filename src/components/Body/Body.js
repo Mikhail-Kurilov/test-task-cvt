@@ -14,23 +14,23 @@ class Body extends React.Component {
     }
 
     toggleWordsClickHandler(activePage) {
-        document.querySelectorAll('.toggleWords').forEach(elem => elem.classList.toggle('active'));
+        document.querySelectorAll('.body__bodyWrapper_navigationBox_toggleWords').forEach(elem => elem.classList.toggle('active'));
         this.setState({ activePage });
     }
 
     render() {
         return (
             <div className="body">
-                <div className="bodyWrapper">
-                    <div className="navigationBox">       
-                        <button className="toggleWords active" onClick={() => this.toggleWordsClickHandler('Films')}>
+                <div className="body__bodyWrapper">
+                    <div className="body__bodyWrapper_navigationBox">       
+                        <button className="body__bodyWrapper_navigationBox_toggleWords active" onClick={() => this.toggleWordsClickHandler('Films')}>
                         Фильмы
                         </button>
-                        <button className="toggleWords" onClick={() => this.toggleWordsClickHandler('Channels')}>
+                        <button className="body__bodyWrapper_navigationBox_toggleWords" onClick={() => this.toggleWordsClickHandler('Channels')}>
                         Телеканалы
                         </button>
                     </div>
-                    <main className="bodyMain">
+                    <main className="body__bodyWrapper_bodyMain">
                     {this.state.activePage === 'Films' ? <Films /> : <Channels />}
                     </main>
                 </div>

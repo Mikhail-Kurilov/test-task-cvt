@@ -39,7 +39,7 @@ class Header extends React.Component {
             return (
                 <div className="header__wrapper_enterBox_userButtonBox">
                     <p className="header__wrapper_enterBox_userButtonBox_userName" contentEditable="true">{this.userNameAdd()}</p>
-                    <button className="header__wrapper_enterBox_userButtonBox_button" onClick = { (event) => this.switchOff(event) }>Выйти</button>
+                    <button className="header__wrapper_enterBox_userButtonBox_buttonOut" onClick = { (event) => this.switchOff(event) }>Выйти</button>
                 </div>
             )
         } else 

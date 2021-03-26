@@ -39,6 +39,7 @@
 .footer__footerWrapper_footerTextBox_footerText_tel {
     text-decoration: none;
     color: #333333;
+    margin-right: 0.3rem;
 }
 
 .footer__footerWrapper_footerTextBox_hrefMainSite {

@@ -31,9 +31,9 @@ class App extends React.Component {
     render() {
         return (
         <div className="App">
-            <Helmet>
-            <title lang="ru">Видеосервис</title>
-            </Helmet>
+                <Helmet>
+                    <title lang="ru">Видеосервис</title>
+                </Helmet>
             {this.state.login ?
             <Authorization
                 authorizationResult={(val) => this.authorizationResult(val)}

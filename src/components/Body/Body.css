@@ -34,6 +34,7 @@
 .body__bodyWrapper_navigationBox_toggleWords.active {
     color: #E5261E;
     border-bottom: 2px solid #E5261E;
+    transition: all 0.8s;
 }
 
 .body__bodyWrapper_bodyMain {

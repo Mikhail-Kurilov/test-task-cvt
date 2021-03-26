@@ -9,6 +9,7 @@
     margin-top: 11.1rem;
     cursor: pointer;
     letter-spacing: 0.1rem;
+    transition: all 0.8s;
 }
 
 .authorizationWrapper_authorization_buttonAuth:hover {
@@ -71,6 +72,7 @@
 input:checked + label:before {
     content: '\2714';
     color: red;
+    overflow: hidden;
 }
 
 .authorizationWrapper_authorization_checkBox_rememberWord {

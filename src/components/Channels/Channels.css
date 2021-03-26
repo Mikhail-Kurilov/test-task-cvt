@@ -8,12 +8,12 @@
 .channels__channelsContainer {
     display: flex;
     flex-direction: column;
-    margin-top: 2.7rem;
+    margin-top: 1.9rem;
     width: 100%;
     overflow-y: scroll;
     width: 118rem;
-    height: 69.6rem;
-    justify-content: space-between;
+    height: 70.4rem;
+    justify-content: start;
 }
 
 .channels__channelsContainer_channelBox {
@@ -24,6 +24,8 @@
     border-radius: 0.8rem;
     height: 16.2rem;
     align-items: center;
+    margin: 0.8rem 0;
+    flex-shrink: 0;
 }
 
 .channels__channelsContainer_channelBox_channelTextBox {
@@ -62,6 +64,7 @@
     color: #E5261E;
     margin-top: 1.7rem;
     letter-spacing: -0.02rem;
+    overflow-block: hidden;
 }
 
 .channels__channelsContainer_channelBox_channelTextBox_progListFirst_time {
@@ -81,6 +84,7 @@
     text-align: left;
     margin-top: 1.3rem;
     letter-spacing: -0.02rem;
+    overflow-block: hidden;
 }
 
 @media screen and (min-width:928px) {

@@ -31,7 +31,10 @@ class Films extends React.Component {
                             </li>
                             <li className="films__filmsWrapper_newFilms_filmsContainer_movieItem">
                                 <a className="films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards" href="" >
-                                    <div className="films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture" id="woodPic" data-title='Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.'><img src="/holywood.png" alt="holywood" /></div>
+                                    <div className="films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture" id="woodPic" data-title='Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.'>
+                                        <div className="films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_wrapper"></div>
+                                        <img className="films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_holywood" src="/holywood.png" alt="holywood" />
+                                    </div>
                                     <h3 className="films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_filmsName">Однажды... в Голливуде</h3> 
                                 </a>
                             </li>

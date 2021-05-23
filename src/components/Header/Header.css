@@ -152,6 +152,8 @@
     .header__wrapper {
         flex-direction: column;
         height: 14rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .header {

@@ -129,7 +129,7 @@ input:checked + label:before {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .authorizationWrapper_authorization {
-        margin-left: 37.8rem;
+        margin-left: 37.3rem;
     }
 }
 
@@ -147,12 +147,12 @@ input:checked + label:before {
 
 @media screen and (min-width: 411px) and (max-width: 415px) {
     .authorizationWrapper_authorization {
-        margin-left: 4.8rem;
+        margin-left: 5.5rem;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 411px) {
     .authorizationWrapper_authorization {
-        margin-left: 2rem;
+        margin-left: 2.8rem;
     }
 }

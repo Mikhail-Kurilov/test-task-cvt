@@ -51,6 +51,7 @@
 }
 
 .films__filmsWrapper_newFilms_filmsContainer_movieItem {
+    border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -58,10 +59,21 @@
 }
 
 .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture {
-    border-radius: 0.8rem;
+    border-radius: 0.79rem;
     cursor: pointer;
     display: inline-block;
     position: relative;
+}
+
+.films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_wrapper {
+    opacity: 0;
+    background-color: #333333;
+    position: absolute;
+    top: 0;
+}
+
+.films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_wrapper:hover {
+    opacity: 0.8;
 }
 
 .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture::after {
@@ -74,7 +86,6 @@
     line-height: 22.4px;
     z-index: 2;
     background: rgba(51, 51, 51, 51, 0.8); 
-    font-size: 16px;
     left: 1.6rem; top:1.6rem; right: 1.6rem;
     color: #f2f2f2;
     text-align: left;
@@ -174,6 +185,20 @@
         height: 37rem;
     }
 
+    .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_wrapper {
+        height: 37rem;
+        width: 28rem;
+    }
+
+    .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_holywood {
+        height: 37rem;
+        width: 28rem;
+    }
+
+    .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture:hover::after {
+        font-size: 16px;
+    }
+
     .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_filmsName {
         font-size: 20px;
     }
@@ -201,6 +226,16 @@
 
     .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture {
         height: 24rem;
+    }
+
+    .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_wrapper {
+        height: 24rem;
+        width: 18rem;
+    }
+
+    .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_holywood {
+        height: 24rem;
+        width: 18rem;
     }
 
     .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_filmsName {
@@ -232,6 +267,16 @@
         height: 18rem;
     }
 
+    .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_wrapper {
+        height: 18rem;
+        width: 12rem;
+    }
+
+    .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_holywood {
+        height: 18rem;
+        width: 12rem;
+    }
+
     .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_filmsName {
         font-size: 14px;
         overflow-wrap: break-word;
@@ -261,6 +306,16 @@
 
     .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture {
         height: 12rem;
+    }
+
+    .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_wrapper {
+        height: 12rem;
+        width: 10rem;
+    }
+
+    .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_moviePicture_holywood {
+        height: 12rem;
+        width: 10rem;
     }
 
     .films__filmsWrapper_newFilms_filmsContainer_movieItem_hrefCards_filmsName {

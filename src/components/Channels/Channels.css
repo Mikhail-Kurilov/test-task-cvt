@@ -13,7 +13,7 @@
     overflow-y: scroll;
     width: 118rem;
     height: 70.4rem;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .channels__channelsContainer_channelBox {

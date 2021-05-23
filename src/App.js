@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 
 import './App.css';
 
@@ -30,10 +29,8 @@ class App extends React.Component {
 
     render() {
         return (
-        <div className="App">
-                <Helmet>
-                    <title lang="ru">Видеосервис</title>
-                </Helmet>
+        <div className="App">                
+            <title lang="ru">Видеосервис</title>
             {this.state.login ?
             <Authorization
                 authorizationResult={(val) => this.authorizationResult(val)}
@@ -41,9 +38,9 @@ class App extends React.Component {
             /> : ''
             }
             <Header
-            ref={header => this.header = header}
-            authorizationToggle={(val) => this.authorizationToggle(val)}
-            authorizationState={this.state.login}
+                ref={header => this.header = header}
+                authorizationToggle={(val) => this.authorizationToggle(val)}
+                authorizationState={this.state.login}
             />
             <Body />
             <Footer />

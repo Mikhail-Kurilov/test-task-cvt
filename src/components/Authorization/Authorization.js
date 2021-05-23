@@ -34,7 +34,7 @@ class Authorization extends React.Component {
                     </span>
                     <span className="authorizationWrapper_authorization_checkBox">
                         <input id="checkMark" type="checkbox"></input>
-                        <label className="authorizationWrapper_authorization_checkBox_rememberWord" for="checkMark">Запомнить</label>
+                        <label className="authorizationWrapper_authorization_checkBox_rememberWord" htmlFor="checkMark">Запомнить</label>
                     </span>
                     <button className="authorizationWrapper_authorization_buttonAuth" onClick={() => this.login()}>Войти</button>
                 </form>
